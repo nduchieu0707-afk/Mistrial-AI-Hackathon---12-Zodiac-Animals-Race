@@ -1,4 +1,5 @@
 🏇 12 ZODIAC ANIMALS RACING - GODOT GAME
+
 📝 PROJECT DESCRIPTION
 12 Zodiac Animals Racing is a horse racing game inspired by the 12 Asian zodiac animals. Players select an animal, train its stats, and race against 11 other animals.
 
