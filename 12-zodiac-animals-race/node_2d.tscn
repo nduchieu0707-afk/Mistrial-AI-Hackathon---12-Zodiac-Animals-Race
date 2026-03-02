@@ -1,0 +1,431 @@
+[gd_scene load_steps=17 format=3 uid="uid://cakgkydx6tr8m"]
+
+[ext_resource type="Script" uid="uid://j0kmlnqynlvm" path="res://main.gd" id="1_epypp"]
+[ext_resource type="Script" uid="uid://cm7mvyafwgh8e" path="res://ncprace.gd" id="2_0e48y"]
+[ext_resource type="Texture2D" uid="uid://duxk0sd5f6p4e" path="res://12 zodiac animals/dragon-blobmoji-512.png" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://c82qf74xn0tau" path="res://12 zodiac animals/mouse-blobmoji-512.png" id="3_nr8wp"]
+[ext_resource type="Texture2D" uid="uid://bqr8jin2iihm6" path="res://12 zodiac animals/horse-blobmoji-512.png" id="4_d21ai"]
+[ext_resource type="Texture2D" uid="uid://87uyufbi2en1" path="res://12 zodiac animals/tiger-blobmoji-512.png" id="5_d2bti"]
+[ext_resource type="Texture2D" uid="uid://bfhle6m3h78dp" path="res://12 zodiac animals/ox-blobmoji-512.png" id="5_rj586"]
+[ext_resource type="Texture2D" uid="uid://cjlkf21contwm" path="res://12 zodiac animals/pig-blobmoji-512.png" id="6_4d7sh"]
+[ext_resource type="Texture2D" uid="uid://6igolxcffuwm" path="res://12 zodiac animals/rabbit-blobmoji-512.png" id="6_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://b3o3k5eb54dkn" path="res://12 zodiac animals/snake-blobmoji-512.png" id="7_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://bgkrv8cg6pe6w" path="res://12 zodiac animals/rooster-blobmoji-512.png" id="8_rj586"]
+[ext_resource type="Texture2D" uid="uid://df18i3jpu38rs" path="res://12 zodiac animals/goat-blobmoji-512.png" id="10_flf07"]
+[ext_resource type="Texture2D" uid="uid://8mlf0yjhm0ta" path="res://12 zodiac animals/monkey-blobmoji-512.png" id="11_k73cj"]
+[ext_resource type="Texture2D" uid="uid://cwyxpqr4i87jk" path="res://12 zodiac animals/dog-blobmoji-512.png" id="13_rjqkl"]
+[ext_resource type="Texture2D" uid="uid://cmcdnu34enag1" path="res://racing.jpg" id="15_d2bti"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
+size = Vector2(70, 59)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_epypp")
+metadata/_edit_horizontal_guides_ = [41.0]
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(-151, 2, 457.00037, 1.7947845, 7185, 2)
+
+[node name="Horse1" type="Area2D" parent="."]
+position = Vector2(0, 20)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse1"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_nr8wp")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse1"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse1"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse1"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse1"]
+root_node = NodePath("../..")
+
+[node name="Horse2" type="Area2D" parent="."]
+position = Vector2(-0.24000001, 70.44)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse2"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_rj586")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse2"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse2"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse2"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse2"]
+root_node = NodePath("../..")
+
+[node name="Horse3" type="Area2D" parent="."]
+position = Vector2(-1, 122.88)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse3"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_d2bti")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse3"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse3"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse3"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse3"]
+root_node = NodePath("../..")
+
+[node name="Horse4" type="Area2D" parent="."]
+position = Vector2(-0.9999999, 173.04)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse4"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_ta5nu")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse4"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse4"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse4"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse4"]
+root_node = NodePath("../..")
+
+[node name="Horse5" type="Area2D" parent="."]
+position = Vector2(-1, 225.48)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse5"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_epypp")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse5"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse5"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse5"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse5"]
+root_node = NodePath("../..")
+
+[node name="Horse6" type="Area2D" parent="."]
+position = Vector2(-0.24000001, 282.48)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse6"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_ir8iy")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse6"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse6"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse6"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse6"]
+root_node = NodePath("../..")
+
+[node name="Horse7" type="Area2D" parent="."]
+position = Vector2(0.5199999, 337.19998)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse7"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_d21ai")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse7"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse7"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse7"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse7"]
+root_node = NodePath("../..")
+
+[node name="Horse8" type="Area2D" parent="."]
+position = Vector2(-0.24000001, 393.44)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse8"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("10_flf07")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse8"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse8"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse8"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse8"]
+root_node = NodePath("../..")
+
+[node name="Horse9" type="Area2D" parent="."]
+position = Vector2(1.28, 455)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse9"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("11_k73cj")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse9"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse9"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse9"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse9"]
+root_node = NodePath("../..")
+
+[node name="Horse10" type="Area2D" parent="."]
+position = Vector2(1.2799999, 513.52)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse10"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("8_rj586")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse10"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse10"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse10"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse10"]
+root_node = NodePath("../..")
+
+[node name="Horse11" type="Area2D" parent="."]
+position = Vector2(-0.23999977, 570.51996)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse11"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("13_rjqkl")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse11"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse11"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse11"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse11"]
+root_node = NodePath("../..")
+
+[node name="Horse12" type="Area2D" parent="."]
+position = Vector2(-0.24000573, 625.24)
+scale = Vector2(0.532, 0.532)
+script = ExtResource("2_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Horse12"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_4d7sh")
+flip_h = true
+
+[node name="Label" type="Label" parent="Horse12"]
+offset_left = -26.0
+offset_top = -22.0
+offset_right = 31.0
+offset_bottom = 1.0
+text = "Dragon"
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="Horse12"]
+offset_left = -1.0
+offset_top = 31.0
+offset_right = 3.0
+offset_bottom = 58.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse12"]
+position = Vector2(-2, 11.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Horse12"]
+root_node = NodePath("../..")
+
+[node name="Line2D3" type="Line2D" parent="."]
+z_index = -1
+position = Vector2(3, 648)
+points = PackedVector2Array(-171, 2, 457.00037, 1.7947845, 7185, 2)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(2000, 0)
+
+[node name="Racing2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(450, 325)
+scale = Vector2(1.011, 1.011)
+texture = ExtResource("15_d2bti")
+
+[node name="Racing3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1450, 325)
+scale = Vector2(1.011, 1.011)
+texture = ExtResource("15_d2bti")
